@@ -39,6 +39,8 @@ icmp && ip.addr == 1.1.1.1
 
 Capture: [icmp-filtered.pcapng](icmp-filtered.pcapng)
 
+![ICMP Echo Requests and Replies](Wiresharks%20screenshots/icmp-exchange.png)
+
 ## 2. DNS Analysis
 
 ### Command
@@ -63,6 +65,8 @@ dns.qry.name == "example.com"
 
 Capture: [dns-filtered.pcapng](dns-filtered.pcapng)
 
+![DNS response with two IPv4 answers](Wiresharks%20screenshots/dns-response.png)
+
 ## 3. TCP and HTTP Analysis
 
 ### Command
@@ -82,6 +86,10 @@ curl.exe --http1.1 -I http://example.com
 - Packets 7–9 showed connection termination using FIN and ACK flags.
 
 Capture: [tcp-http-analysis.pcapng](tcp-http-analysis.pcapng)
+
+![TCP handshake and HTTP exchange](Wiresharks%20screenshots/tcp-http-exchange.png)
+
+![TCP SYN flag details](Wiresharks%20screenshots/tcp-syn-flags.png)
 
 ## How to View
 
